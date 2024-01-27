@@ -352,10 +352,19 @@ align-items: flex-start;
     .center_menu{
         padding: 0;
     }
-    .logo_menu {
-
+    .howiworks_menu{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
     }
-    .right_menu
+    .steps_menu{
+        grid-template-columns: 1fr;
+    }
+    .item{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
 }
 @media screen and (max-width:500px) {
     .header h1{
@@ -365,4 +374,22 @@ align-items: flex-start;
         flex-direction: column;
         align-items: center;
     }
+    .howitworks_h2{
+        white-space: wrap;
+    }
+    .text_item{
+        white-space: wrap;
+    }
+    .p3_item{
+        white-space: wrap;
+        width: 50%;
+    }
+
 }
+@media screen and (max-width:400px){
+.box_item{
+    width: 70%;
+}
+.monitor_img{
+    display: none;
+}}
