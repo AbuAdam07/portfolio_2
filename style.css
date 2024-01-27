@@ -12,8 +12,107 @@ body{
     max-width: 1370px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
+
+.top_menu {
+
+    width: 1920px;
+    height: 85px;
+}
+
+.inside_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+
+
+}
+.logo_menu {
+
+
+}
+.logo {
+}
+.logo2 {
+    width: 79.565px;
+    height: 23.04px;
+    flex-shrink: 0;
+
+}
+.center_menu{
+    display: flex;
+    padding-right: 136px;
+
+}
+.center_menu ul {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.center_menu ul li{
+    padding-right: 72px;
+
+
+}
+.center_menu ul li a{
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.center_menu ul li:last-child{
+    padding-right: 0;
+}
+.right_menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text a{
+    text-decoration: none;
+    list-style: none;
+    padding-right: 50px;
+    color: #000;
+
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.menu_btn {
+    white-space: nowrap;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 125% */
+    width: 183px;
+    height: 65px;
+    border-radius: 4px;
+    padding: 13px 50px;
+    background-color: #01996D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+}
+
 
 .header{
     min-height: 895px;
@@ -23,6 +122,7 @@ body{
     background-size:cover;
 }
 .header h1{
+    
     font-size: 65px;
     font-weight:bold;
     font-family: 'Georgia', serif;
@@ -30,6 +130,8 @@ body{
     color: #01996D;
     margin-top: 0;
     padding-top: 175px;
+    margin-bottom: 0;
+    
 }
 
 .header p{
@@ -42,6 +144,7 @@ body{
     line-height: 157%;
     height: 123px;
     margin-bottom: 18px;
+    margin-top: 32px;
 }
 
 .header button{
@@ -85,9 +188,33 @@ body{
 .footer ul li:last-child{
     margin-bottom: 0px;
 }
+@media screen and (max-width:1024px){
+    .top_menu{
+        width: 100%;
+    }
+    .container{
+        margin: 0;
+       
+    }
+    .inside_menu{
+flex-direction: column;
+align-items: flex-start;
 
+    }
+    .center_menu{
+        padding: 0;
+    }
+    .logo_menu {
+
+    }
+    .right_menu
+}
 @media screen and (max-width:500px) {
     .header h1{
         min-width: 0;
+    }
+    .center_menu ul{
+        flex-direction: column;
+        align-items: center;
     }
 }
