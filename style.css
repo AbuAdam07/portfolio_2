@@ -15,6 +15,8 @@ body{
     padding: 0;
 }
 
+
+
 .top_menu {
 
     width: 1920px;
@@ -70,6 +72,9 @@ body{
     line-height: normal;
 
 }
+.center_menu ul li a:hover{
+    color: #01996D;
+}
 .center_menu ul li:last-child{
     padding-right: 0;
 }
@@ -92,6 +97,9 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    }
+    .text a:hover{
+        color: #01996D;
     }
 .menu_btn {
     white-space: nowrap;
@@ -131,6 +139,7 @@ body{
     margin-top: 0;
     padding-top: 175px;
     margin-bottom: 0;
+    text-shadow: #424242 0px 3px 10px;
     
 }
 
@@ -450,6 +459,7 @@ body{
     line-height: 157%; /* 31.4px */
     }
     .product_btn {
+        cursor: pointer;
         display: inline-flex;
         padding: 20px 50px;
         flex-direction: column;
@@ -500,6 +510,14 @@ body{
 .footer ul li:last-child{
     margin-bottom: 0px;
 }
+.btn_one{
+    box-shadow: 0 5px 0 #01996D;
+    transition: .3s;
+}
+.btn_one:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #424242;
+  }
 @media screen and (max-width:1024px){
     .top_menu{
         width: 100%;
